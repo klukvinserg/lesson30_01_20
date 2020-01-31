@@ -34,16 +34,6 @@ body, html {
     box-sizing: border-box;
 }
 
-.btn {
-    width: 100%;
-    background-color: rgb(21, 141, 168);
-    border-color: transparent;
-}
-
-.btn:hover {
-    background-color: rgb(13, 52, 61);
-}
-
 p {
     margin-top: 5px;
 }
