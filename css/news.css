@@ -32,3 +32,13 @@
 .date > p {
     font-size: 13px;
 }
+
+.style-span {
+    font-size: 2em; 
+   
+}
+
+.style-span-small {
+    font-size: 1.5em; 
+    
+}

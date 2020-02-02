@@ -1,115 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/schedule.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/af71f45ffd.js" crossorigin="anonymous"></script>
-
-</head>
-<body> 
-   <header class="container">
-    <!-- Image and text -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="#">
-        <span style="font-size: 2em; color: white;">
-            <i class="fas fa-user-graduate"></i>
-          </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Attendance</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="schedule.html">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Homework</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">
-                        <span style="font-size: 1.5em;">
-                            <i class="fas fa-bell"></i>
-                          </span>
-                        </a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span style="font-size: 1.5em;">
-                            <i class="fas fa-user-circle"></i>
-                          </span>
-                        </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span style="font-size: 1.5em;">
-                            <i class="fas fa-door-open"></i>
-                          </span>
-                        </a>
-                </li>
-              </ul>
-          </span>
-      </div>
-  </nav>
-   </header>
-
-   <main class="container">
-      <div class="row justify-content-md-center">
-
-        <div class="col-4">
-          2 из 3
-        </div>
-        
-      </div>
-      <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Имя</th>
-            <th scope="col">Фамилия</th>
-            <th scope="col">Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
-   </main>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Schedule</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/schedule.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/af71f45ffd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                <a class="navbar-brand" href="#">
+                    <span class="style-span">
+                        <i class="fas fa-user-graduate"></i>
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Attendance</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Homework</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">
+                                    <span class="style-span-small">
+                                        <i class="fas fa-bell"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="style-span-small">
+                                        <i class="fas fa-user-circle"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <span class="style-span-small">
+                                        <i class="fas fa-door-open"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-6 col-lg-5 article">
+                    <span class="arrow">
+                        <i class="fas fa-arrow-left"></i>
+                        PREV
+                    </span>
+                    <h4>22-27 APRIL 2020</h4>
+                    <span class="arrow">
+                        NEXT<i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+            <table class="table table-striped table-responsive-md table-hover ">
+                <thead class="table-info text-white">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="table-bordered">8.00-9.20</th>
+                        <th scope="col" class="table-bordered">9.40-11.00</th>
+                        <th scope="col" class="table-bordered">11.20-12.40</th>
+                        <th scope="col" class="table-bordered">13.00-14.20</th>
+                        <th scope="col" class="table-bordered">14.40-16.00</th>
+                        <th scope="col" class="table-bordered">16.20-17.40</th>
+                        <th scope="col" class="table-bordered">18.00-19.20</th>
+                        <th scope="col">19.40-21.00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">MON</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">TUE</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">WED</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">THU</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>21</span>
+                            </div>
+                            <div class="text-small">
+                                JS<br>ABS-6579
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered">
+                            <div class="text-smaller">
+                                <span>16</span>
+                            </div>
+                            <div class="text-small">
+                                HTML &CSS<br>ABS-1234
+                            </div>
+                        </td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">FRI</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SAT</td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td class="table-bordered"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SUN</td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td class="table-bordered cell-bottom"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
 </html>
